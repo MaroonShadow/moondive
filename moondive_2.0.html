@@ -107,6 +107,7 @@ NAME intro room
 ITM 2 11,14
 ITM 2 3,12
 ITM 2 4,7
+ITM 0 13,8
 EXT 0,11 9 13,0
 EXT 15,14 1 0,14
 PAL 0
@@ -257,22 +258,22 @@ PAL 0
 TUNE 6
 
 ROOM 7
-b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b
-b,b,b,b,b,b,b,b,b,b,14,0,0,0,0,0
+b,b,b,b,b,1t,1s,b,b,b,b,b,b,b,b,b
+b,b,b,b,b,b,b,b,b,b,j,0,0,0,0,0
 b,b,j,0,h,0,i,b,15,0,0,0,0,0,0,0
-b,0,0,0,0,0,0,h,0,0,0,0,0,0,0,b
+b,h,0,0,0,0,0,h,0,0,0,0,0,0,0,b
 b,0,0,a,0,0,0,0,0,0,0,b,b,b,b,b
 b,0,0,b,k,0,0,0,0,0,b,b,b,b,b,b
 b,0,b,b,b,b,b,k,0,0,14,0,b,b,b,l
 b,0,i,b,b,b,b,b,b,0,0,0,h,i,b,b
-b,0,0,0,0,0,0,0,b,0,0,0,0,0,b,b
-b,0,0,0,0,0,0,b,b,0,0,0,0,0,b,b
-b,k,0,0,0,0,b,b,14,0,0,0,0,0,b,b
+b,0,0,0,0,0,i,j,b,0,0,0,0,0,b,b
+b,0,0,0,0,0,0,b,b,0,0,0,0,0,b,1q
+b,k,0,0,0,0,b,b,14,0,0,0,0,0,b,1t
 b,b,0,0,0,0,b,r,0,0,0,0,0,0,0,b
 b,b,0,0,0,0,r,0,0,0,0,0,0,a,0,b
 b,b,b,k,0,0,b,0,0,0,0,0,0,b,b,b
-b,b,b,b,b,0,b,0,0,0,0,k,0,b,b,b
-b,b,b,b,b,b,b,0,0,0,0,b,b,b,b,0
+1q,1r,b,b,b,p,b,0,0,0,0,k,0,b,b,b
+1t,1s,b,b,b,b,b,0,0,0,0,b,b,b,b,0
 NAME room5
 ITM 3 3,9
 EXT 7,15 8 14,8
@@ -485,7 +486,7 @@ TIL 18
 10,10,10,10,10,10,10,10
 10,10,10,10,10,10,10,10
 NAME wawa1
-WAL false
+WAL true
 COL 1
 
 TIL 19
@@ -498,6 +499,7 @@ TIL 19
 10,10,16,16,16,16,10,10
 10,10,16,16,16,16,10,10
 NAME wawa2
+WAL true
 COL 1
 
 TIL a
@@ -838,6 +840,7 @@ TIL 1a
 10,10,10,10,10,10,10,10
 10,10,10,10,10,10,10,10
 NAME wawa3
+WAL true
 COL 1
 
 TIL 1b
@@ -850,6 +853,7 @@ TIL 1b
 16,16,16,16,16,16,16,16
 16,16,16,16,16,16,16,16
 NAME wawa4
+WAL true
 COL 1
 
 TIL 1c
@@ -888,6 +892,7 @@ TIL 1e
 13,18,18,18,18,13,18,18
 13,13,13,13,13,13,13,13
 NAME wawa7
+WAL true
 COL 1
 
 TIL 1f
@@ -1235,6 +1240,7 @@ NAME Bleep1
 DLG 8
 POS 3 14,4
 COL 2
+BLIP 4
 
 SPR f
 0,0,0,0,0,0,0,0
@@ -1335,6 +1341,7 @@ NAME sign_1
 DLG h
 POS 1 9,5
 COL 2
+BLIP 7
 
 SPR k
 0,0,0,0,0,0,0,0
@@ -1395,19 +1402,21 @@ NAME sign_2
 DLG i
 POS 4 8,12
 COL 2
+BLIP 7
 
 ITM 0
 0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0
+0,0,0,10,0,0,0,0
+0,0,10,22,10,0,0,0
+0,10,22,10,10,22,0,0
+0,0,10,10,22,10,0,0
+0,0,0,10,10,0,0,0
 0,0,0,0,0,0,0,0
-0,0,1,1,1,1,0,0
-0,1,1,0,0,1,0,0
-0,0,1,0,0,1,0,0
-0,0,0,1,1,0,0,0
-0,0,0,0,0,0,0,0
-NAME tea
+NAME Page
 DLG 1
 COL 2
+BLIP 6
 
 ITM 1
 0,0,0,0,0,0,0,0
@@ -1435,16 +1444,17 @@ ITM 2
 NAME Spent Fuel
 DLG 3
 COL 2
+BLIP 6
 
 ITM 3
-0,0,0,1,1,0,0,0
-0,0,1,0,0,1,0,0
-0,1,0,1,1,0,1,0
-0,1,0,1,1,0,1,0
-1,0,0,1,1,0,0,1
-1,0,0,1,1,0,0,1
-0,1,0,1,1,0,1,0
-0,0,1,1,1,1,0,0
+0,0,0,4,4,0,0,0
+0,0,4,15,15,4,0,0
+0,4,15,14,14,15,4,0
+0,4,15,14,14,15,4,0
+4,19,15,14,14,15,19,4
+4,19,15,14,14,15,19,4
+0,4,19,14,14,19,4,0
+0,0,4,4,4,4,0,0
 NAME Big Fuel
 DLG e
 COL 2
@@ -1463,7 +1473,7 @@ COL 2
 
 DLG 0
 """
-Zorp!(I am an alien.)
+Zorp! (I am an alien.)
 
 Zorp Zoop Zeep! (I am VERY lost!)
 
@@ -1472,8 +1482,12 @@ Zoop-Zeep Zarp Zoop. (If you find a way out of here, take me with you! I have fu
 NAME alien dialog
 
 DLG 1
-You found a nice warm cup of tea
-NAME tea dialog
+"""
+A scrap of paper.
+
+"MOONCO NOTICE: Lunar mining expedition discontinued until further notice. High fuel consumption has proved unprofitable. MoonCo will not be paying for employee relocation.
+"""
+NAME note dialog
 
 DLG 2
 A full Fuel canister! {wvy}Who left this behind?{wvy}
@@ -1762,8 +1776,8 @@ SQR P2
 BLIP 2
 D5,E5,D5
 NAME pick up key
-ENV 99 65 6 96 152
-BEAT 95 0
+ENV 99 65 6 160 152
+BEAT 96 0
 SQR P4
 
 BLIP 3
